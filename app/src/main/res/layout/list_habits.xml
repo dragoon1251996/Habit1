@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+  ~
+  ~ This file is part of Loop Habit Tracker.
+  ~
+  ~ Loop Habit Tracker is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by the
+  ~ Free Software Foundation, either version 3 of the License, or (at your
+  ~ option) any later version.
+  ~
+  ~ Loop Habit Tracker is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+  ~ more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along
+  ~ with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?windowBackgroundColor">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:layout_alignParentTop="true"
+            app:popupTheme="?toolbarPopupTheme" />
+
+        <org.isoron.uhabits.activities.habits.list.views.HeaderView
+            android:id="@+id/header"
+            style="@style/ListHabits.Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar" />
+
+        <org.isoron.uhabits.activities.habits.list.views.HabitCardListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:background="?windowBackgroundColor"
+            android:divider="?windowBackgroundColor"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/llEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvStarEmpty"
+                style="@style/ListHabits.EmptyState"
+                android:text="@string/fa_star_half_o"
+                android:textSize="80sp" />
+
+            <TextView
+                style="@style/ListHabits.EmptyState"
+                android:text="@string/no_habits_found" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="@dimen/progressbarOffset"
+            android:visibility="gone" />
+
+        <org.isoron.uhabits.activities.habits.list.views.HintView
+            android:id="@+id/hintView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <View
+            android:id="@+id/toolbarShadow"
+            style="@style/ToolbarShadow"
+            android:layout_below="@id/toolbar" />
+
+        <View
+            android:id="@+id/headerShadow"
+            style="@style/ToolbarShadow"
+            android:layout_below="@id/header" />
+
+    </RelativeLayout>
+    <org.isoron.uhabits.floatbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_anchorGravity="bottom|right|end"
+        fab:fab_addButtonColorNormal="@color/white"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/half_black"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <org.isoron.uhabits.floatbutton.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/addg"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed" />
+
+        <org.isoron.uhabits.floatbutton.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/find"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white_pressed" />
+
+    </org.isoron.uhabits.floatbutton.FloatingActionsMenu>
+</android.support.design.widget.CoordinatorLayout>

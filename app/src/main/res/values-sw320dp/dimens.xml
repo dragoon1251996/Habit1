@@ -1,0 +1,13 @@
+<resources>
+<!--Defaultscreenmargins,pertheAndroidDesignguidelines.-->
+<dimen name="activity_horizontal_margin">10.72dp</dimen>
+<dimen name="activity_vertical_margin">10.72dp</dimen>
+<dimen name="nav_header_vertical_spacing">10.72dp</dimen>
+<dimen name="nav_header_height">167.5dp</dimen>
+<dimen name="fab_margin">10.72dp</dimen>
+<dimen name="item">60.300003dp</dimen>
+<dimen name="item1">46.9dp</dimen>
+<dimen name="item2">67.0dp</dimen>
+<dimen name="size">46.9dp</dimen>
+
+</resources>

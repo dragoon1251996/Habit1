@@ -1,0 +1,66 @@
+<!--
+  ~ Copyright (C) 2016 Álinson Santos Xavier <isoron@gmail.com>
+  ~
+  ~ This file is part of Loop Habit Tracker.
+  ~
+  ~ Loop Habit Tracker is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by the
+  ~ Free Software Foundation, either version 3 of the License, or (at your
+  ~ option) any later version.
+  ~
+  ~ Loop Habit Tracker is distributed in the hope that it will be useful, but
+  ~ WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+  ~ or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+  ~ more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along
+  ~ with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <dimen name="baseSize">20dp</dimen>
+    <dimen name="checkmarkWidth">42dp</dimen>
+    <dimen name="checkmarkHeight">48dp</dimen>
+    <dimen name="history_editor_max_height">450dp</dimen>
+    <dimen name="history_editor_padding">8dp</dimen>
+    <dimen name="history_max_font_size">@dimen/regularTextSize</dimen>
+    <dimen name="regularTextSize">16sp</dimen>
+    <dimen name="smallTextSize">14sp</dimen>
+    <dimen name="smallerTextSize">12sp</dimen>
+    <dimen name="tinyTextSize">10sp</dimen>
+    <dimen name="habitNameWidth">160dp</dimen>
+    <dimen name="progressbarOffset">-6dp</dimen>
+    <dimen name="checkmarkWidget_heightBreakpoint">55dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">250dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item">90dp</dimen>
+    <dimen name="item1">70dp</dimen>
+    <dimen name="item2">100dp</dimen>
+    <dimen name="size">70dp</dimen>
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+
+    <dimen name="fab_icon_size">24dp</dimen>
+
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+
+    <dimen name="fab_stroke_width">1dp</dimen>
+
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+
+
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- Library dimensions -->
+    <dimen name="fvp_default_circle_radius">4dp</dimen>
+    <dimen name="fvp_default_circle_padding">12dp</dimen>
+</resources>
